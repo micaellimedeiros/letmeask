@@ -10,7 +10,7 @@ import { RoomCode } from '../../components/RoomCode';
 import { useRoom } from '../../hooks/useRoom';
 import { database } from '../../services/firebase';
 
-import '../../styles/room.scss';
+import '../Room/styles.scss';
 
 type RoomParams = {
   id: string;
