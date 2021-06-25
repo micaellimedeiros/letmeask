@@ -8,6 +8,19 @@
     margin-top: 8px;
   }
 
+  &.highlighted {
+    background: var(--purple-50);
+    border: 1px solid var(--purple);
+    
+    footer .user-info span {
+      color: var(--gray-800);
+    }
+  }
+  
+  &.answered {
+    background: var(--gray-150);
+  }
+
   p {
     color: var(--gray-800);
   }
@@ -33,6 +46,11 @@
         color: var(--gray-300);
         font-size: 14px;
       }
+    }
+
+    > div {
+      display: flex;
+      gap: 16px;
     }
 
     button {
