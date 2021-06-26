@@ -13,22 +13,22 @@
     flex-direction: column;
     justify-content: center;
 
-    padding: 120px 80px;
+    padding: 7.5rem 5rem;
 
     img {
-      max-width: 320px;
+      max-width: 20rem;
     }
 
     strong {
-      font: 700 36px 'Poppins', sans-serif;
-      line-height: 42px;
-      margin-top: 16px;
+      font: 700 2.25rem 'Poppins', sans-serif;
+      line-height: 2.625rem;
+      margin-top: 1rem;
     }
 
     p {
-      font-size: 24px;
-      line-height: 32px;
-      margin-top: 16px;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 1rem;
       color: var(--gray-100)
     }
   }
@@ -36,7 +36,7 @@
   main {
     flex: 8;
 
-    padding: 0 32px;
+    padding: 0 2rem;
 
     display: flex;
     align-items: center;
@@ -47,7 +47,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 320px;
+    max-width: 20rem;
     align-items: stretch;
     text-align: center;
 
@@ -56,22 +56,22 @@
     }
 
     h2 {
-      font-size: 24px;
-      margin: 64px 0 24px;
+      font-size: 1.5rem;
+      margin: 4rem 0 1.5rem;
       font-family: "Poppins", sans-serif;
     }
 
     form {
       input {
-        height: 50px;
-        border-radius: 8px;
-        padding: 0 16px;
+        height: 3.125rem;
+        border-radius: 0.5rem;
+        padding: 0 1rem;
         background: var(--white);
         border: 1px solid var(--gray-200);
       }
 
       button {
-        margin-top: 16px;
+        margin-top: 1rem;
       }
 
       button, input {
@@ -80,9 +80,9 @@
     }
 
     p {
-      font-size: 14px;
+      font-size: 0.875rem;
       color: var(--gray-300);
-      margin-top: 16px;
+      margin-top: 1rem;
       
       a {
         color: var(--pink);
@@ -91,9 +91,9 @@
   }
 
   .create-room {
-    margin-top: 64px;
-    height: 50px;
-    border-radius: 8px;
+    margin-top: 4rem;
+    height: 3.125rem;
+    border-radius: 0.5rem;
     font-weight: 500;
     background: var(--orange);
     color: var(--white);
@@ -108,7 +108,7 @@
     transition: filter 0.2s;
 
     img {
-      margin-right: 8px;
+      margin-right: 0.5rem;
     }
 
     &:hover {
@@ -117,10 +117,10 @@
   }
 
   .separator {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--gray-300);
     
-    margin: 32px 0;
+    margin: 2rem 0;
     display: flex;
     align-items: center;
 
@@ -129,7 +129,7 @@
       flex: 1;
       height: 1px;
       background: var(--gray-300);
-      margin-right: 16px;
+      margin-right: 1rem;
     }
 
     &::after {
@@ -137,7 +137,66 @@
       flex: 1;
       height: 1px;
       background: var(--gray-300);
-      margin-left: 16px;
+      margin-left: 1rem;
+    }
+  }
+
+  @media(max-width: 768px) {
+    display: block;
+
+    aside {
+      padding: 1.6rem 0;
+
+      flex-direction: row;
+
+      img {
+        max-width: 10%;
+      }
+
+      div {
+        margin: 1rem 3rem;
+
+        strong {
+          font-size: 2rem;
+          margin-top: 2rem;
+        }
+  
+        p {
+          font-size: 1rem;
+          line-height: 0;
+        }
+      }
+    }
+
+    main {
+      margin-top: 2rem;
+    }
+  }
+
+  @media(max-width: 505px) {
+
+    aside {
+      img {
+        display: none;
+      }
+
+      div {
+
+        strong {
+          font-size: 1.2rem;
+          margin-top: 2rem;
+        }
+  
+        p {
+          font-size: 0.9rem;
+          margin-top: -0.5rem;
+          line-height: 1;
+        }
+      }
+    }
+
+    main {
+      margin-top: 2rem;
     }
   }
 }
